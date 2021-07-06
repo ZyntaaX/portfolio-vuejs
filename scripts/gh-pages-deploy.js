@@ -2,6 +2,7 @@ const execa = require("execa");
 const fs = require("fs");
 
 (async () => {
+    let exitCode = 0;
     try {
         await execa("git", ["checkout", "--orphan", "gh-pages"]);
         console.log("Building...");
@@ -18,6 +19,11 @@ const fs = require("fs");
         console.log("Successfully deployed");
     } catch (e) {
         console.log(e.message);
-        process.exit(1);
+        exitCode = 1;
+    } finally {
+        // await promises.writeFile(configFilePath, originPublicPath, fileOpts);
+        await execa("git", ["checkout", "-f", "master"]);
+        await execa("git", ["branch", "-D", "gh-pages"]);
     }
+    process.exit(exitCode);
 })();
