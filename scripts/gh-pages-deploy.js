@@ -10,7 +10,7 @@ const fs = require("fs");
         // Understand if it's dist or build folder
         const folderName = fs.existsSync("dist") ? "dist" : "build";
 
-        await execa("cd dist && cp index.html 404.html");
+        await execa("npm", ["run", "pre-deploy"]);
 
         await execa("git", ["--work-tree", folderName, "add", "--all"]);
         await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
