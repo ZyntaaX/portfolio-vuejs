@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-        About Me! HEHEHE
+        About Me!
     </h1>
   </div>
 </template>
