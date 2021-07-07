@@ -1,6 +1,5 @@
 module.exports = {
-    publicPath: '/portfolio-vuejs/',
-    // generate: {
-    //     fallback: true
-    // }
+    publicPath: process.env.NODE_ENV === 'production' // '/portfolio-vuejs/',
+    ? '/portfolio-vuejs'
+    : '/'
 };
