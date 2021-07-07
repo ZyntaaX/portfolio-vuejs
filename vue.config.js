@@ -1,3 +1,6 @@
 module.exports = {
-    publicPath: '/portfolio-vuejs/'
+    publicPath: '/portfolio-vuejs/',
+    generate: {
+        fallback: true
+    }
 };
