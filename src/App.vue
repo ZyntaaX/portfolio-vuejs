@@ -1,22 +1,46 @@
 <template>
   <div class="main">
-    <h1>Rasmus Svanberg</h1>
-
-    <NavBar/>
+    <div class="header">
+      <h1>Rasmus Svanbergs' Portfolio</h1>
+      <NavBar/>
+    </div>
 
     <router-view/>
 
+    <span class="footer">
+      <b>
+        Version:
+      </b>
+      <p>
+        {{ this.version }}
+      </p>
+    </span>
   </div>
 </template>
 
 <script>
 
 import NavBar from '@/views/NavBar.vue'
+import Package from '@/../package.json';
 
   export default{
     components: {
       NavBar,
-    }
+    },
+    data() {
+      return {
+          version: '',
+          Package,
+      }
+    },
+    methods: {
+        getVersion() { 
+            return  Package.version; 
+        }
+    },
+    created() {
+        this.version = this.getVersion();
+    },
   }
 </script>
 
