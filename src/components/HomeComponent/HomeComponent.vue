@@ -9,30 +9,13 @@
             Fugit est ut itaque autem obcaecati impedit suscipit nobis? Esse placeat, commodi eaque suscipit blanditiis accusamus consequatur. 
             Qui tenetur obcaecati tempore dolore?
         </p>
-
-        Version: {{ this.version }}
     </div>
 </template>
 
 <script>
 
-import Package from '@/../package.json';
-
 export default {
-    data() {
-        return {
-            version: '',
-            Package,
-        }
-    },
-    methods: {
-        getVersion() { 
-            return  Package.version;// process.env.VUE_APP_PROJECT_VERSION; 
-        }
-    },
-    created() {
-        this.version = this.getVersion();
-    },
+
 }
 </script>
 
