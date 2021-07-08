@@ -1,5 +1,6 @@
-# project
+[![Deploy to Github Pages](https://github.com/ZyntaaX/portfolio-vuejs/actions/workflows/gh-pages-deploy.yml/badge.svg?branch=main)](https://github.com/ZyntaaX/portfolio-vuejs/actions/workflows/gh-pages-deploy.yml)
 
+# Portfolio 
 ## Project setup
 ```
 npm install
