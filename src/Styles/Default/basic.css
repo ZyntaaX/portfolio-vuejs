@@ -13,6 +13,7 @@ body {
     padding: 0;
     top: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 #app {
@@ -20,15 +21,17 @@ body {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
 }
 
 #header {
     display: flex;
     align-items: center;
-    background-color: var(--primary-bg-color);
-    width: 110%;
+    width: 100%;
     flex-grow: 1;
-    background-image: linear-gradient(135deg, var(--secondary-bg-color) 15%, var(--primary-bg-color) 50%);
+    /* background-image: linear-gradient(135deg, var(--secondary-bg-color) 15%, var(--primary-bg-color) 50%); */
+    background-color: transparent;
+    position: absolute;
 }
 
 #header h1 {
@@ -42,7 +45,8 @@ body {
     height: 100%;
     background-image: linear-gradient(155deg, var(--bg-dark-color), var(--black));
     color: var(--text-primary-color);
-    padding: 2%;
+    padding: 8%;
+    padding-top: 100px;
 }
 
 #body h1 {
@@ -67,6 +71,18 @@ body {
 #footer b {
     justify-content: center;
     margin-right: 10px;
+}
+
+.tab2 {
+    tab-size: 2;
+}
+
+.tab4 {
+    tab-size: 4;
+}
+
+.tab8 {
+    tab-size: 8;
 }
 
 /* html {

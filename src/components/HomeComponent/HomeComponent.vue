@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page__content__default">
         <h1>
             Welcome to me!
         </h1>

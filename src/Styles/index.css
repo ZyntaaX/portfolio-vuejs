@@ -3,7 +3,8 @@
 
 /* IMPORT ALL STYLES HERE */
 
-@import './basic.css';
+@import './Default/basic.css';
+@import './Default/default.css';
 @import '../components/NavBarComponent/Styles/NavBarComponent.css';
 
 /* - - - - - - - - - - - - */
