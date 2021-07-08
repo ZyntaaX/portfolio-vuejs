@@ -5,7 +5,7 @@
       <NavBar/>
     </div>
 
-    <router-view/>
+    <router-view class="body__content"/>
 
     <span class="footer">
       <b>

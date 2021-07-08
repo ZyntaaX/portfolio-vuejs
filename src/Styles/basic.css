@@ -1,17 +1,21 @@
 html {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     background-color: var(--black);
 }
 
 body {
     height: 100%;
-    background-color:  var(--white);
+    width: 100%;
+    background-color:  var(--secondary-bg-color);
     margin: 0%;
 }
 
+
 .main {
     text-align: center;
+    height:81%;
 }
 
 .main h1 {
@@ -22,6 +26,20 @@ body {
     background-color: var(--primary-bg-color);
     color: var(--text-primary-color);
     padding: 10px;
+    border-bottom: var(--primary-border);
+}
+
+.body__content {
+    background-color: var(--primary-bg-color);
+    width: 90%;
+    height: 100%;
+    margin: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: var(--primary-border);
+    border-radius: 5px;
+    color: var(--text-primary-color);
+    /* margin: 10px; */
 }
 
 .footer {
@@ -35,6 +53,7 @@ body {
 
     background-color: var(--primary-bg-color);
     color: var(--text-primary-color);
+    border-top: var(--primary-border);
     
 
     display: flex;
@@ -52,4 +71,5 @@ body {
     -moz-osx-font-smoothing: grayscale;
     
     text-align: center;
+    height: 100%;
 } 

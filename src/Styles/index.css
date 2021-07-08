@@ -1,6 +1,8 @@
+/* Main theme file */
+@import './theme.css';
+
 /* IMPORT ALL STYLES HERE */
 
-@import './theme.css';
 @import './basic.css';
 @import '../components/NavBarComponent/Styles/NavBarComponent.css';
 
