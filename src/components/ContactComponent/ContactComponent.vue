@@ -22,10 +22,4 @@ export default {
 
 <style>
 
-  .page__content__default {
-    margin: 5%;
-    border: var(--primary-border);
-    padding: 5%;
-  }
-
 </style>
