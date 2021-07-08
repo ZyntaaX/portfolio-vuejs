@@ -1,21 +1,17 @@
 <template>
-  <div class="main">
-    <div class="header">
-      <h1>Rasmus Svanbergs' Portfolio</h1>
+  <!-- <div class="main"> -->
+    <div id="header">
+      <h1>Rasmus Svanberg</h1>
       <NavBar/>
     </div>
 
-    <router-view class="body__content"/>
+    <router-view id="body"/>
 
-    <span class="footer">
-      <b>
-        Version:
-      </b>
-      <p>
-        {{ this.version }}
-      </p>
+    <span id="footer">
+      <b>Version: </b>{{ this.version }}
+      
     </span>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>

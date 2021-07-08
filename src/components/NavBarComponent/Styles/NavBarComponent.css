@@ -1,14 +1,44 @@
+/* PC (wide screen) */
 #nav {
-    padding: 30px;
-    padding-bottom: 10px;
+    position: absolute;
+    float: right;
+    right: 0px;
+    margin-right: 2%;
+    font-size: 1.3rem;
+    transition: font-size 0.2s;
+    color: var(--text-primary-color);
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 65%;
+    height: 10%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
-  
+
 #nav a {
     font-weight: bold;
-    margin: 20px;
     color: var(--text-primary-color);
+    text-decoration: none;
+    text-shadow: var(--text-shadow);
+    transition: font-size 0.2s;
+}
+
+#nav a:hover {
+    color: var(--link-highlight-color);
 }
 
 #nav a.router-link-exact-active {
     color: var(--link-active-color);  
+    font-size: 1.6rem;
+    transition: font-size 0.2s;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 920px) {
+    #nav {
+        background-color: brown;
+    }
 }

@@ -1,15 +1,19 @@
 :root {
     /* Main Color Scheme */
     --main-color: #42b983;
-    --primary-bg-color: #313131;
-    --secondary-bg-color: #3f3c44;
+    --main-color-light: #90c5ad;
+    --primary-bg-color: #534b62;
+    --secondary-bg-color: #807496;
+    --bg-dark-color: #3f3f3f;
     
     /* Basic Colors */
     --black: #000000;
     --white: #ffffff;
-    --primary-border: 2px solid black;
+    --primary-border: 1 px solid black;
 
     /* Text and links */
     --text-primary-color: rgb(206, 206, 206);
     --link-active-color: var(--main-color);
+    --link-highlight-color: var(--main-color-light);
+    --text-shadow: -1px 1px 3px black;
 }
