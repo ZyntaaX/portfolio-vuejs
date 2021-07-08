@@ -1,3 +1,6 @@
+/* Main theme file */
+@import './theme.css';
+
 /* IMPORT ALL STYLES HERE */
 
 @import './basic.css';
