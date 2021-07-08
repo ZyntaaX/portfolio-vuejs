@@ -1,0 +1,7 @@
+.page__content__default {
+    margin: 5%;
+    /* border: var(--primary-border); */
+    padding: 5%;
+    height: 50%;
+    /* overflow-y: scroll; */
+  }
