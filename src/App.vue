@@ -1,17 +1,16 @@
 <template>
-  <!-- <div class="main"> -->
-    <div id="header">
-      <h1>Rasmus Svanberg</h1>
-      <NavBar/>
-    </div>
+  <div id="header">
+    <h1>Rasmus Svanberg</h1>
+    <NavBar/>
+  </div>
 
-    <router-view id="body"/>
+  <router-view id="main__content"/>
 
-    <span id="footer">
-      <b>Version: </b>{{ this.version }}
-      
+  <div id="footer">
+    <span>
+      <b>Version: </b> <p>{{ this.version }}</p>
     </span>
-  <!-- </div> -->
+  </div>
 </template>
 
 <script>
