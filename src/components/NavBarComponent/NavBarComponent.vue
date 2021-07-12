@@ -5,13 +5,13 @@
         <router-link to="/">Home</router-link>
       </li>
       <li>
-        <router-link to="/projects">My Projects</router-link>
+        <router-link to="/projects">Projects</router-link>
       </li>
       <li>
         <router-link to="/about">About me</router-link>
       </li>
       <li>
-        <router-link to="/contact">Contact me</router-link>
+        <router-link to="/contact">Contact</router-link>
       </li>
     </ul>
     </div>
