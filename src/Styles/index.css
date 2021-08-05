@@ -1,10 +1,13 @@
 /* Main theme file */
 @import './theme.css';
 
+/* Default and Reset, needs to be placed first */
+@import './Default/reset.css';
+@import './Default/default.css';
+
 /* IMPORT ALL STYLES HERE */
 
-@import './Default/basic.css';
-@import './Default/default.css';
 @import '../components/NavBarComponent/Styles/NavBarComponent.css';
+
 
 /* - - - - - - - - - - - - */
