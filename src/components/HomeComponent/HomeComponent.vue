@@ -1,13 +1,11 @@
 <template>
     <div class="page__content__default">
         <h1>
-            Welcome to me!
+            Welcome to my portfolio!
         </h1>
+
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo similique consequuntur officia, 
-            nam harum itaque ex voluptatem cupiditate cum repudiandae, a cumque aperiam quas suscipit fuga dignissimos! 
-            Fugit est ut itaque autem obcaecati impedit suscipit nobis? Esse placeat, commodi eaque suscipit blanditiis accusamus consequatur. 
-            Qui tenetur obcaecati tempore dolore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perferendis laboriosam similique, ipsam, velit vel doloremque officia ipsa, odit maxime voluptatum sequi! Itaque nesciunt libero officia eveniet corrupti in voluptate accusamus quibusdam numquam, saepe sequi nostrum eum fugit iste. Eveniet ipsum reiciendis a quaerat at culpa qui distinctio excepturi iste iusto, repellat nisi nesciunt minus quos dignissimos totam necessitatibus ratione ullam quam magnam iure pariatur beatae. Exercitationem impedit voluptatibus ipsam necessitatibus earum maiores quo ex blanditiis cum dolores dolor consequuntur eius praesentium ea, ratione quod magnam. Maxime eius, inventore quibusdam sunt repudiandae facilis totam, corrupti deleniti ea incidunt, minima quos.
         </p>
     </div>
 </template>
@@ -19,6 +17,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+
 
 </style>
