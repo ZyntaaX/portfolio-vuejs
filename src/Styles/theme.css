@@ -1,6 +1,6 @@
 :root {
     /* Main Color Scheme */
-    --main-color: #42b983;
+    --main-color: #3d8d69;
     --main-color-light: #90c5ad;
     --primary-bg-color: #534b62;
     --secondary-bg-color: #807496;
@@ -13,7 +13,9 @@
 
     /* Text and links */
     --text-primary-color: rgb(206, 206, 206);
+    --text-primary-color-dark: rgb(43, 43, 43);
     --link-active-color: var(--main-color);
     --link-highlight-color: var(--main-color-light);
     --text-shadow: -1px 1px 3px black;
+    --text-shadow-large: -2px 2px 5px black;
 }
