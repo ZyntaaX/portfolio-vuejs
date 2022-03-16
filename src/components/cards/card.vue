@@ -1,25 +1,27 @@
 <template>
-  <div>
-    <div class="container">
-      <slot />
-    </div>
+  <div class="main-container">
+      <slot/>
   </div>
 </template>
 
 <script>
 
 export default {
-
+  name: 'CardComponent',
 };
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 
-  .container {
+  .main-container {
     width: 100%;
-    border-bottom: 5px solid gray;
-    background-color: red;
+    height: fit-content;
+    border-bottom: 1px solid #999;
+  }
+
+  .flex {
+    display: inline-flex;
   }
 
 </style>

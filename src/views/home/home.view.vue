@@ -1,17 +1,14 @@
 <template>
   <div>
-      <slot/>
+    Home :D
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'HeaderComponent',
+  name: 'HomeView',
+  components: {
+  },
 };
-
 </script>
-
-<style lang="scss" scoped>
-
-</style>

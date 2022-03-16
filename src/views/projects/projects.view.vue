@@ -1,13 +1,13 @@
 <template>
   <div>
-      <slot/>
+      Projects :D
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'HeaderComponent',
+  name: 'ProjectsView',
 };
 
 </script>
