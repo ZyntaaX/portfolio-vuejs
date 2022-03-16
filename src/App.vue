@@ -15,7 +15,7 @@
 
 <script>
 
-import NavBar from '@/views/NavBar.vue'
+import NavBar from '@/views/navbar/navbar.vue'
 import Package from '@/../package.json';
 
   export default{

@@ -6,7 +6,7 @@
 
 <script>
 
-import HomeComponent from '@/components/HomeComponent/HomeComponent.vue'
+import HomeComponent from './components/home.component.vue'
 
 export default {
   components: {

@@ -6,7 +6,7 @@
 
 <script>
 
-import AboutComponent from '@/components/AboutComponent/AboutComponent.vue'
+import AboutComponent from './components/about.component.vue'
 
 export default {
   components: {

@@ -6,7 +6,7 @@
 
 <script>
 
-import ProjectsComponent from '@/components/ProjectsComponent/ProjectsComponent.vue'
+import ProjectsComponent from './components/projects.component.vue'
 
 export default {
     components: {

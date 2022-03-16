@@ -6,7 +6,7 @@
     <h1 id="me">
       &nbsp;me
     </h1>
-    <img src="../../../public/images/avatar.jpg" alt="Me" id="avatar">
+    <img src="/images/avatar.jpg" alt="Me" id="avatar">
     <p>
       Hi, my name is Rasmus Svanberg.
       <br>
