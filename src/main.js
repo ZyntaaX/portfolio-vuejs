@@ -1,5 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-createApp(App).use(router).mount('#app')
+// Entrypoint for Sass
+import '@/scss/index.scss';
+
+createApp(App).use(router).mount('#app');

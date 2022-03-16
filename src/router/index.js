@@ -1,45 +1,48 @@
-import { createRouter, /* createWebHistory */ createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '@/views/home/home.view.vue';
+import AboutView from '@/views/about/about.view.vue';
+import ContactView from '@/views/contact/contact.view.vue';
+import ProjectsView from '@/views/projects/projects.view.vue';
+import NotFoundView from '@/views/404/404.vue';
+
+export const ROUTE_HOME = '/';
+export const ROUTE_ABOUT = '/about';
+export const ROUTE_CONTACT = '/contact';
+export const ROUTE_PROJECTS = '/projects';
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: ROUTE_HOME,
+    name: 'home',
+    component: HomeView,
   },
   {
-    path: '/projects',
-    name: 'Projects',
-    component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue')
+    path: ROUTE_ABOUT,
+    name: 'about',
+    component: AboutView,
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting+
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: ROUTE_CONTACT,
+    name: 'contact',
+    component: ContactView,
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
+    path: ROUTE_PROJECTS,
+    name: 'projects',
+    component: ProjectsView,
   },
 
-
-
-  
   /* This catchAll should always be placed as the last route-check! */
   {
     path: '/:catchAll(.*)',
     name: '404',
-    component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')
-  }
-]
+    component: NotFoundView,
+  },
+];
 
 const router = createRouter({
-  history: createWebHashHistory(), // createWebHistory(),
-  routes
-})
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+});
 
-export default router
+export default router;

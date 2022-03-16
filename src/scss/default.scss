@@ -1,0 +1,14 @@
+html {
+    background-color: var(--background-color);
+
+    h1, h2, h3, h4, h5, h6, p, a, li, ul, ol, button, input, textarea, select {
+      color: var(--text-color-primary);
+    }
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
