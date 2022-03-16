@@ -1,29 +1,36 @@
 import { createRouter, /* createWebHistory */ createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+
+import HomeView from '@/views/home/home.vue'
+import AboutView from '@/views/about/about.vue';
+import ContactView from '@/views/contact/contact.vue';
+import ProjectsView from '@/views/projects/projects.vue';
+import CatchAllView from '@/views/404/404.vue';
+
+export const ROUTE_HOME = '/';
+export const ROUTE_PROJECTS = '/projects';
+export const ROUTE_CONTACT = '/contact';
+export const ROUTE_ABOUT = '/about';
 
 const routes = [
   {
-    path: '/',
+    path: ROUTE_HOME,
     name: 'Home',
-    component: Home
+    component: HomeView
   },
   {
-    path: '/projects',
+    path: ROUTE_PROJECTS,
     name: 'Projects',
-    component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue')
+    component: ProjectsView
   },
   {
-    path: '/about',
+    path: ROUTE_ABOUT,
     name: 'About',
-    // route level code-splitting+
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: AboutView
   },
   {
-    path: '/contact',
+    path: ROUTE_CONTACT,
     name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
+    component: ContactView
   },
 
 
@@ -33,7 +40,7 @@ const routes = [
   {
     path: '/:catchAll(.*)',
     name: '404',
-    component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')
+    component: CatchAllView
   }
 ]
 
