@@ -1,6 +1,6 @@
 <template>
   <Card class="flex">
-    <h2 class="header-title">Rasmus Svanberg</h2>
+    <h2 class="header-title" @click="navigateHome">Rasmus Svanberg</h2>
 
     <div class="flex-fill" />
 
@@ -26,6 +26,8 @@
         :title="'Contact'"
       />
     </nav>
+    <font-awesome-icon class="search-icon" icon="magnifying-glass" />
+    <!-- <input v-model="text" placeholder="Search" class="search-form"/> -->
   </Card>
 </template>
 
@@ -52,6 +54,12 @@ export default {
     Card,
     NavigationItemComponent,
   },
+  methods: {
+    navigateHome() {
+      console.log('Should navigate home');
+      this.$router.push(ROUTE_HOME);
+    },
+  },
 };
 
 </script>
@@ -60,6 +68,22 @@ export default {
 
   .header-title {
     margin-left: 20%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .search-icon {
+    color: var(--primary-color);
+    height: 24px;
+    width: 24px;
+    margin: 25px 20% 25px 0;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--primary-color-light);
+    }
   }
 
   .flex-fill {
@@ -68,7 +92,7 @@ export default {
 
   nav {
     display: inline-flex;
-    margin-right: 20%;
+    // margin-right: 20%;
     padding: 30px;
 
     // a {
