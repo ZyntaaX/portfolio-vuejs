@@ -1,14 +1,16 @@
-import { createRouter, createWebHashHistory /* , createWebHistory */ } from 'vue-router';
+import { createRouter, /* createWebHashHistory */ createWebHistory } from 'vue-router';
 import HomeView from '@/views/home/home.view.vue';
 import AboutView from '@/views/about/about.view.vue';
 import ContactView from '@/views/contact/contact.view.vue';
 import ProjectsView from '@/views/projects/projects.view.vue';
 import NotFoundView from '@/views/404/404.vue';
 
-export const ROUTE_HOME = '/';
-export const ROUTE_ABOUT = '/about';
-export const ROUTE_CONTACT = '/contact';
-export const ROUTE_PROJECTS = '/projects';
+const BASE_URL = process.env.NODE_ENV === 'production' ? '/portfolio-vuejs' : '';
+
+export const ROUTE_HOME = `${BASE_URL}/`;
+export const ROUTE_ABOUT = `${BASE_URL}/about`;
+export const ROUTE_CONTACT = `${BASE_URL}/contact`;
+export const ROUTE_PROJECTS = `${BASE_URL}/projects`;
 
 const routes = [
   {
@@ -41,7 +43,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(/* process.env.BASE_URL */),
+  history: createWebHistory(/* process.env.BASE_URL */),
   routes,
 });
 
