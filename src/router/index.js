@@ -5,12 +5,13 @@ import ContactView from '@/views/contact/contact.view.vue';
 import ProjectsView from '@/views/projects/projects.view.vue';
 import NotFoundView from '@/views/404/404.vue';
 
-const BASE_URL = '/portfolio-vuejs'; // process.env.NODE_ENV === 'production' ? '/portfolio-vuejs' : '';
+// eslint-disable-next-line max-len
+// const BASE_URL = '/portfolio-vuejs'; // process.env.NODE_ENV === 'production' ? '/portfolio-vuejs' : '';
 
-export const ROUTE_HOME = `${BASE_URL}/`;
-export const ROUTE_ABOUT = `${BASE_URL}/about`;
-export const ROUTE_CONTACT = `${BASE_URL}/contact`;
-export const ROUTE_PROJECTS = `${BASE_URL}/projects`;
+export const ROUTE_HOME = '/';
+export const ROUTE_ABOUT = '/about';
+export const ROUTE_CONTACT = '/contact';
+export const ROUTE_PROJECTS = '/projects';
 
 const routes = [
   {
