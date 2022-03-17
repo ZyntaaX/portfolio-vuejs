@@ -1,7 +1,10 @@
 <template>
   <router-link :to="route">
     <h3> {{ title }} </h3>
-    <div class="underline" />
+    <div
+      class="underline"
+      :class="{'selected': isSelected}"
+    />
   </router-link>
 </template>
 
@@ -9,6 +12,11 @@
 
 export default {
   name: 'NavigationItemComponent',
+  data() {
+    return {
+      isSelected: true,
+    };
+  },
   props: {
     title: {
       type: String,
@@ -26,31 +34,49 @@ export default {
 <style lang="scss" scoped>
 
   nav {
-    display: inline-flex;
-    margin-right: 20%;
-    padding: 30px;
-    width: 100%;
 
     a {
+      width: fit-content;
       text-decoration: none;
 
       &:hover {
           cursor: pointer;
-        // text-decoration: underline;
+
+        .underline {
+          transform: scaleX(1);
+        }
+
+        h3 {
+          color: var(--primary-color);
+        }
+      }
+
+      &:active {
+        .underline {
+          transform: scaleX(1);
+        }
       }
     }
 
     h3 {
       margin: 0;
       padding: 0 20px 0 20px;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .underline {
-        margin: 0 5% 0 5%;
-        width: 90%;
-        // padding: 0 5px 0 5px;
+        margin: 0 10% 0 10%;
+        width: 80%;
+        transform: scaleX(0);
         height: 4px;
-        background-color: red;
+        background-color: var(--primary-color);
+
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
   }
 
