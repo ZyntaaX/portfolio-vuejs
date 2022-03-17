@@ -5,8 +5,6 @@ import ContactView from '@/views/contact/contact.view.vue';
 import ProjectsView from '@/views/projects/projects.view.vue';
 import NotFoundView from '@/views/404/404.vue';
 
-// GHEHE
-
 const BASE_URL = process.env.NODE_ENV === 'production' ? '/portfolio-vuejs' : '';
 
 export const ROUTE_HOME = `${BASE_URL}/`;
