@@ -14,10 +14,10 @@ jobs:
         with:
           node-version: '12'
       - name: Install packages
-        # run: npm i # if using npm
-        run: yarn # if using yarn
+        run: npm i # if using npm
+        # run: yarn # if using yarn
       - name: Set Creds
         run: git config user.name "<zyntaax>" && git config user.email "<rasmus.svahnberg97@gmail.com>"
       - name: Deploy
-        # run: npm run gh-pages-deploy # if using npm
-        run: yarn gh-pages-deploy # if using yarn
+        run: npm run gh-pages-deploy # if using npm
+        # run: yarn gh-pages-deploy # if using yarn
